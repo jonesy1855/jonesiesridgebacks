@@ -67,6 +67,26 @@ serves clean URLs, so bare `/about`, `/dogs` etc. already resolve to the
 Both use `noindex, follow` so the stubs don't get indexed but still pass
 visitors through.
 
+## Installable app (PWA)
+
+The site can be added to a phone's home screen and opens full-screen, like a
+native app:
+
+- `manifest.json` — app name, colours (`#b5532a` terracotta / `#fbf3e8` cream)
+  and icons; `display: standalone`, `start_url: /`.
+- `icons/` — PNG app icons generated from the `favicon.svg` paw logo:
+  `icon-192.png`, `icon-512.png`, a padded `icon-maskable-512.png` for Android
+  and `apple-touch-icon.png` (180px) for iOS.
+- `sw.js` — service worker. Network-first for page loads (with an offline
+  fallback), cache-first with background refresh for CSS/JS/images. Bump
+  `CACHE_NAME` (e.g. `-v2`) to force clients to pick up a fresh cache.
+- `offline.html` — friendly "You're offline" page, shown when a page can't load.
+- Every page links the manifest + icons and registers the service worker via
+  `js/main.js`.
+
+To install: Chrome (Android) → menu → "Add to Home screen"; Safari (iOS) →
+Share → "Add to Home Screen". Requires HTTPS (already in place).
+
 ## Deploy
 
 Push to `main`. GitHub Pages (Settings → Pages → Deploy from branch → `main` /
