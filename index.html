@@ -3,36 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jonesies Ridgebacks &middot; Coming Soon</title>
-  <meta name="description" content="Jonesies Ridgebacks - Rhodesian Ridgeback breeders. Our new site is coming soon.">
-  <link rel="stylesheet" href="css/landing.css">
+  <title>Jonesies Ridgebacks &middot; Rhodesian Ridgebacks</title>
+  <meta name="description" content="Jonesies Ridgebacks - living with, raising and showing Rhodesian Ridgebacks. Meet Zuri, Kiwi and Lyla.">
+  <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-  <main class="landing">
-    <div class="landing__sun" aria-hidden="true"></div>
 
-    <div class="landing__content">
-      <p class="landing__eyebrow">Rhodesian Ridgebacks</p>
-      <h1 class="landing__title">Jonesies Ridgebacks</h1>
-      <div class="landing__divider" aria-hidden="true"></div>
-      <p class="landing__lead">
-        Welcome &mdash; and thank you for stopping by. We are busy putting
-        together a new home online for our hounds, litters and news.
-      </p>
-      <span class="landing__badge">Coming Soon</span>
-      <p class="landing__contact">
-        In the meantime, get in touch at
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">Jonesies <span>Ridgebacks</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="dogs.html">Dogs</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__sun" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow">Rhodesian Ridgebacks</p>
+        <h1>Welcome to Jonesies Ridgebacks</h1>
+        <p class="hero__lead">
+          The place to come for information about Ridgebacks, and to follow the
+          lives of our hounds &mdash; Zuri, Kiwi and Lyla.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="dogs.html">Meet the dogs</a>
+          <a class="btn btn--ghost" href="about.html">About us</a>
+        </div>
+      </div>
+      <svg class="hero__dunes" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#e0b97f" d="M0,150 C280,90 420,190 720,150 C1020,110 1160,200 1440,140 L1440,220 L0,220 Z"></path>
+        <path fill="#c88b52" d="M0,185 C300,140 500,215 780,180 C1060,145 1240,210 1440,175 L1440,220 L0,220 Z"></path>
+        <path fill="#a9622f" d="M0,208 C360,180 620,225 900,200 C1180,175 1300,212 1440,198 L1440,220 L0,220 Z"></path>
+      </svg>
+    </section>
+
+    <div class="page">
+      <section class="section">
+        <h2>Our Ridgebacks</h2>
+        <p class="page-header">A house full of hounds. Click through to each of their pages.</p>
+        <div class="card-grid">
+          <a class="card" href="zuri.html">
+            <div class="card__media">
+              <img data-photo="Zuri" src="images/zuricamp.jpg" alt="Zuri the Rhodesian Ridgeback">
+            </div>
+            <div class="card__body">
+              <h3>Zuri</h3>
+              <p>Our beautiful girl, a natural in front of the camera and the ring.</p>
+            </div>
+          </a>
+          <a class="card" href="kiwi.html">
+            <div class="card__media">
+              <img data-photo="Kiwi" src="images/DSCN3409.JPG" alt="Kiwi the Rhodesian Ridgeback">
+            </div>
+            <div class="card__body">
+              <h3>Kiwi</h3>
+              <p>Our first Rhodie &mdash; Kumani Zato, and the one who started it all.</p>
+            </div>
+          </a>
+          <a class="card" href="lyla.html">
+            <div class="card__media">
+              <img data-photo="Lyla" src="images/lyla_so_beautiful.jpg" alt="Lyla the Rhodesian Ridgeback">
+            </div>
+            <div class="card__body">
+              <h3>Lyla</h3>
+              <p>The newest member of the pack &mdash; Lyla Bear, Sidra.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Thinking of getting a Ridgeback?</h2>
+        <p class="page-header">
+          They are wonderful, rewarding dogs &mdash; but they are not for everyone.
+          Read our guide before you fall in love.
+        </p>
+        <a class="btn btn--primary" href="about.html">Read the guide</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; 2026 Jonesies Ridgebacks &middot;
         <a href="mailto:jonesiesridgebacks@gmail.com">jonesiesridgebacks@gmail.com</a>
       </p>
+      <p>
+        <a href="https://www.facebook.com/jonesies.ridgebacks/">Facebook</a>
+        <a href="https://instagram.com/jonesiesridgebacks/">Instagram</a>
+      </p>
     </div>
+  </footer>
 
-    <p class="landing__footer">&copy; 2026 Jonesies Ridgebacks</p>
-
-    <svg class="landing__dunes" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
-      <path fill="#e0b97f" d="M0,150 C280,90 420,190 720,150 C1020,110 1160,200 1440,140 L1440,220 L0,220 Z"></path>
-      <path fill="#c88b52" d="M0,185 C300,140 500,215 780,180 C1060,145 1240,210 1440,175 L1440,220 L0,220 Z"></path>
-      <path fill="#a9622f" d="M0,208 C360,180 620,225 900,200 C1180,175 1300,212 1440,198 L1440,220 L0,220 Z"></path>
-    </svg>
-  </main>
+  <script src="js/main.js"></script>
 </body>
 </html>

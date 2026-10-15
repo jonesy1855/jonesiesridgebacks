@@ -6,4 +6,39 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://jonesiesridgebacks.co.uk/about.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jonesiesridgebacks.co.uk/dogs.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jonesiesridgebacks.co.uk/zuri.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jonesiesridgebacks.co.uk/kiwi.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jonesiesridgebacks.co.uk/lyla.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jonesiesridgebacks.co.uk/gallery.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jonesiesridgebacks.co.uk/blog.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.6</priority>
+  </url>
 </urlset>

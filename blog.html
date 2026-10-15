@@ -3,28 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog - Jonesies Ridgebacks</title>
-  <link rel="stylesheet" href="css/main.css">
+  <title>Blog &amp; News &middot; Jonesies Ridgebacks</title>
+  <meta name="description" content="News and useful reads about Rhodesian Ridgebacks.">
+  <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-  <header>
-    <h1>Jonesies Ridgebacks</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="dogs.html">Dogs</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="blog.html">Blog/News</a></li>
-      </ul>
-    </nav>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">Jonesies <span>Ridgebacks</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="dogs.html">Dogs</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html" aria-current="page">Blog</a>
+      </nav>
+    </div>
   </header>
-  <main>
-    <h2>Blog</h2>
-    <p>Content coming soon.</p>
+
+  <main class="page">
+    <div class="page-header">
+      <h1>Blog &amp; News</h1>
+      <p>A few reads we like, and news from the Jonesies pack.</p>
+    </div>
+
+    <div class="post-list">
+      <article class="post-item">
+        <a class="post-title"
+          href="https://www.thekennelclub.org.uk/getting-a-dog/buying-a-dog/essential-equipment-for-your-puppy-or-dog/">
+          Essentials to have if you get a puppy</a>
+        <div class="post-meta">The Kennel Club</div>
+        <p>Humans have the intrinsic need for companionship because, well, we are
+          a social species&hellip;</p>
+      </article>
+
+      <article class="post-item">
+        <a class="post-title" href="https://stopmydogshedding.com/do-rhodesian-ridgebacks-shed-much-hair">
+          Are Rhodies hypoallergenic?</a>
+        <div class="post-meta">Stop My Dog Shedding</div>
+        <p>No, Rhodesian Ridgebacks aren't hypoallergenic. But no dog is ever
+          truly 100% hypoallergenic&hellip;</p>
+      </article>
+
+      <article class="post-item">
+        <a class="post-title" href="https://www.akc.org/expert-advice/nutrition/feed-my-dog-raw-food-or-dog-kibble/">
+          Raw or Dry?</a>
+        <div class="post-meta">AKC</div>
+        <p>You should always discuss your pet's diet with your veterinarian. They
+          will be familiar with your dog's nutritional needs&hellip;</p>
+      </article>
+
+      <article class="post-item">
+        <a class="post-title" href="about.html">Why do dogs chase balls?</a>
+        <div class="post-meta">Jonesies Ridgebacks</div>
+        <p>What is there not to like about a ball? We throw it, they run and chase
+          it. A Ridgeback however doesn't always get the concept of fetch&hellip;</p>
+      </article>
+    </div>
+
+    <section class="section">
+      <h2>Stay in touch</h2>
+      <p class="page-header">News and litters are shared first on our socials.</p>
+      <a class="btn btn--primary" href="https://instagram.com/jonesiesridgebacks/">Follow on Instagram</a>
+    </section>
   </main>
-  <footer>
-    <p>&copy; 2026 Jonesies Ridgebacks</p>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; 2026 Jonesies Ridgebacks &middot;
+        <a href="mailto:jonesiesridgebacks@gmail.com">jonesiesridgebacks@gmail.com</a>
+      </p>
+      <p>
+        <a href="https://www.facebook.com/jonesies.ridgebacks/">Facebook</a>
+        <a href="https://instagram.com/jonesiesridgebacks/">Instagram</a>
+      </p>
+    </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
