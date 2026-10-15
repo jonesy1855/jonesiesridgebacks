@@ -33,7 +33,46 @@ instead of a broken icon. Current filenames expected:
 `IMG-20220628-WA0000.jpg`, `Lyla_ate_my_homework.jpg`, `Lyla_campin.jpg`,
 `Lyla_are_you_comfy.jpg`, `Lyla_pose_garen.jpg`, `Lyla_asleep_woolrug.jpg`
 
+## SEO / meta audit (2026-10-15)
+
+Headers are already compliant across all pages (title, description, canonical,
+robots, OG, Twitter Card, theme-color, valid `WebSite` JSON-LD, sitemap,
+robots.txt). Four optional polish items are parked for later:
+
+1. **Add `og:image:alt`** to the 8 indexable pages (`index`, `about`, `dogs`,
+   `gallery`, `blog`, `zuri`, `kiwi`, `lyla`) — recommended for accessibility;
+   validators flag its absence.
+2. **Add `og:image:width` / `og:image:height`** — helps social renderers pick
+   the aspect ratio before the image loads.
+3. **Swap JSON-LD `publisher.logo` off `favicon.svg`** — Google ignores SVG
+   logos for the knowledge panel; use a raster PNG ≥112×112.
+4. **Compress og:image** — currently ~840KB Cloudinary JPEG; add
+   `w_1200,f_auto,q_auto` (or similar) for faster social scrapes.
+
+All four are non-blocking — the site is fully indexable and social cards
+already render without them.
+
+## Legacy redirects
+
+Old (pre-rebuild) addresses were 404-ing — notably `/home`, `/our-dogs`,
+`/contact` and `/puppies` (Weebly-style URLs without `.html`). GitHub Pages
+serves clean URLs, so bare `/about`, `/dogs` etc. already resolve to the
+`.html` files. To catch the rest:
+
+- `home.html`, `our-dogs.html`, `contact.html`, `puppies.html` are lightweight
+  redirect stubs (meta-refresh + JS) so the extension-less URLs forward to the
+  right page.
+- `404.html` carries a small JS legacy-URL map as a catch-all.
+
+Both use `noindex, follow` so the stubs don't get indexed but still pass
+visitors through.
+
 ## Deploy
 
 Push to `main`. GitHub Pages (Settings → Pages → Deploy from branch → `main` /
 root) publishes automatically. The `CNAME` file sets the custom domain.
+
+Note: GitHub Pages' CDN caches HTML for ~10 minutes (`cache-control:
+max-age=600`). Immediately after a push a device may briefly serve the old
+page or a 404 while the new deployment propagates — this is normal and
+self-resolves.

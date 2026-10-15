@@ -7,6 +7,35 @@
   <meta name="robots" content="noindex, follow">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/site.css">
+  <script>
+    /* Legacy URL map: quietly forward old (pre-rebuild) addresses to the
+       current page instead of dead-ending on this 404. */
+    (function () {
+      var map = {
+        "/home": "/",
+        "/index": "/",
+        "/about-us": "/about.html",
+        "/aboutus": "/about.html",
+        "/our-hounds": "/dogs.html",
+        "/ourdogs": "/dogs.html",
+        "/our-dogs": "/dogs.html",
+        "/photos": "/gallery.html",
+        "/pictures": "/gallery.html",
+        "/our-gallery": "/gallery.html",
+        "/news": "/blog.html",
+        "/latest-news": "/blog.html",
+        "/contact": "/",
+        "/contact-us": "/",
+        "/puppies": "/about.html",
+        "/litters": "/dogs.html",
+        "/puppy": "/about.html"
+      };
+      var path = window.location.pathname.replace(/\/+$/, "").toLowerCase() || "/";
+      if (map[path]) {
+        window.location.replace(map[path]);
+      }
+    })();
+  </script>
 </head>
 <body>
 
