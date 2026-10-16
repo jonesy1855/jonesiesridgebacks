@@ -21,17 +21,23 @@ Shared styles in `css/site.css`; small progressive-enhancement script in
 
 Drop image files into `images/` using the exact filenames referenced in the
 page markup. Any image that is missing shows a tidy "add file" placeholder
-instead of a broken icon. Current filenames expected:
+instead of a broken icon.
 
-**Zuri:** `zuricamp.jpg`, `sleepyzuri.jpg`, `zuribed.jpg`, `zuri-kiwi.jpg`,
-`dogsandgrandma.jpg`, `dogsbeach.jpg`, `zuritable.jpg`, `zuribeach.jpg`
+Photos currently in place:
 
-**Kiwi:** `DSCN3409.JPG`, `DSCN2375.JPG`, `IMG_0312.JPG`, `DSCN2398.JPG`,
-`DSCN3408.JPG`, `kiandc.jpg`, `citydogs.jpg`
+**Zuri:** `zuri.png` (main), `zuri-ears.jpg`, `zuri-waiting-table.jpg`,
+`zuriandbunny.jpg`, `zuriandc.jpg`
 
-**Lyla:** `lyla_so_beautiful.jpg`, `20220906_090513.jpg`,
-`IMG-20220628-WA0000.jpg`, `Lyla_ate_my_homework.jpg`, `Lyla_campin.jpg`,
-`Lyla_are_you_comfy.jpg`, `Lyla_pose_garen.jpg`, `Lyla_asleep_woolrug.jpg`
+**Kiwi:** `kiwi.png` (main), `kiwi-old-bear.jpg`, `kiwi-run.jpg`
+
+**Shared / group:** `zuri-kiwi.jpg`, `citydogs.jpg`, `dogs-on-bed.jpg`,
+`dog-beds.jpg`, `xmasdogs1.jpg`, `xmasdogs2.jpg`, `xmasdogs3.jpg`,
+`sunloving.jpg`
+
+**Lyla:** only the main `lyla.png` so far. Still wanted:
+`lyla_so_beautiful.jpg`, `20220906_090513.jpg`, `IMG-20220628-WA0000.jpg`,
+`Lyla_ate_my_homework.jpg`, `Lyla_campin.jpg`, `Lyla_are_you_comfy.jpg`,
+`Lyla_pose_garen.jpg`, `Lyla_asleep_woolrug.jpg`
 
 ## SEO / meta audit (2026-10-15)
 
