@@ -34,10 +34,11 @@ Photos currently in place:
 `dog-beds.jpg`, `xmasdogs1.jpg`, `xmasdogs2.jpg`, `xmasdogs3.jpg`,
 `sunloving.jpg`
 
-**Lyla:** only the main `lyla.png` so far. Still wanted:
-`lyla_so_beautiful.jpg`, `20220906_090513.jpg`, `IMG-20220628-WA0000.jpg`,
-`Lyla_ate_my_homework.jpg`, `Lyla_campin.jpg`, `Lyla_are_you_comfy.jpg`,
-`Lyla_pose_garen.jpg`, `Lyla_asleep_woolrug.jpg`
+**Lyla:** `lyla.png` (main), `lyla-puppy-pose.jpg`, `lyla-posing.jpg`,
+`lyla-bluebells.jpg`, `lyla-beach.jpg`, `lyla-rock-pose.jpg`,
+`lyla-gardenseat.jpg`, `lyla-plantpot.jpg`, `lyla-sofa.jpg`,
+`lyla-blanket.jpg`, `lyla-tv.jpg`, `lyla-ate-my-homework.jpg`,
+`lyla-stickypads.jpg`
 
 ## SEO / meta audit (2026-10-15)
 
